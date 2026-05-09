@@ -10,7 +10,9 @@ const urlRoutes = require("./routes/urlRoutes");
 const app = express();
 
 /* MIDDLEWARE */
-app.use(cors());
+app.use(cors({
+  origin: 'https://snaplink-beta.vercel.app'
+}));
 app.use(express.json());
 app.use(morgan("dev")); 
 
@@ -23,7 +25,7 @@ const limiter = rateLimit({
 app.use(limiter);
 
 /* DATABASE CONNECTION */
-mongoose.connect(process.env.MONGO_URI) // ← just pass the URI
+mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("✅ MongoDB Atlas Connected"))
   .catch((err) => console.log("❌ MongoDB connection error:", err));
 
