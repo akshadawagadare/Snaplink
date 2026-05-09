@@ -149,12 +149,6 @@ The app will be running at `http://localhost:5173`
 
 ---
 
-## Contributing
+## Author
 
-Pull requests are welcome. For major changes, please open an issue first.
-
----
-
-## License
-
-[MIT](LICENSE)
+Built with ❤️ by [Akshada Wagadare](https://github.com/akshadawagadare)
