@@ -1,9 +1,9 @@
 import { useState, useCallback } from 'react'
-import Navbar from '../components/snaplink/Navbar'
-import ShortenForm from '../components/snaplink/ShortenForm'
-import ResultCard from '../components/snaplink/ResultCard'
-import Dashboard from '../components/snaplink/Dashboard'
-import Toast from '../components/snaplink/Toast'
+import Navbar from '../components/Snaplink/Navbar'
+import ShortenForm from '../components/Snaplink/ShortenForm'
+import ResultCard from '../components/Snaplink/ResultCard'
+import Dashboard from '../components/Snaplink/Dashboard'
+import Toast from '../components/Snaplink/Toast'
 
 const BASE = import.meta.env.VITE_API_URL
 
