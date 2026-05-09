@@ -5,7 +5,7 @@ import ResultCard from '../components/snaplink/ResultCard'
 import Dashboard from '../components/snaplink/Dashboard'
 import Toast from '../components/snaplink/Toast'
 
-const BASE = 'http://localhost:5000'
+const BASE = import.meta.env.VITE_API_URL
 
 export default function HomePage() {
   const [links, setLinks] = useState([])
